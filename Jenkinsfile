@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ main/hello.cpp -o hello_exec'  // Use main/hello.cpp
+                sh 'g++ main/nonexistent.cpp -o hello_exec'  // Use main/hello.cpp
             }
         }
         stage('Test') {
